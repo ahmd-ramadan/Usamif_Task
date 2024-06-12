@@ -117,17 +117,17 @@ This project aims to develop a comprehensive movie application backend using Nod
 ## Project Structure
 Usamif_Task/  
 ├── controllers/  
-│ ├── auth.controller.js  
+│ ├── user.controller.js  
 │ ├── course.controller.js  
 ├── models/  
-│ ├── User.js  
-│ ├── Course.js  
-│ ├── Review.js  
+│ ├── user.model.js  
+│ ├── course.model.js  
+│ ├── review.model.js  
 ├── routes/  
 │ ├── auth.routes.js  
 │ ├── course.routes.js  
 ├── middleware/  
-│ ├── auth.middleware.js  
+│ ├── authentication.middleware.js  
 | ├── asyncHandler.middleware.js  
 ├── utils/  
 | ├── appError.js  

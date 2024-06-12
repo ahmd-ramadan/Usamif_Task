@@ -26,7 +26,7 @@ app.use(express.json());
 
 //! middlewares (Route Handlers)
 app.use(userRouter);
-app.use('/course', courseRouter);
+app.use('/courses', courseRouter);
 
 app.all('*', (req, res, next) => {
     res.status(404).json({

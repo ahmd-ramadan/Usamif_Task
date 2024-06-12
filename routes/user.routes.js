@@ -10,7 +10,7 @@ router.route('/signup')
 router.route('/login')
     .post(userCtrl.login);
 
-router.route('/favList')
+router.route('/favorites')
     .get(isAuthenticated, userCtrl.favList);
 
 router.route('/activate/:token')

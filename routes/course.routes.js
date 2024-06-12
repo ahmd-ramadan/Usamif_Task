@@ -17,11 +17,13 @@ router.route('/recommend')
     .get(isAuthenticate, courseCtrl.recommendCources)
 
 router.route('/like/:courseId')
-    .post(isAuthenticate, courseCtrl.like)
+    .get(isAuthenticate, courseCtrl.like)
+
+router.route('/review/:courseId')
+    .post(isAuthenticate, courseCtrl.review)
 
 router.route('/:courseId')
     .get(courseCtrl.getCourseById)
-    .post(isAuthenticate, courseCtrl.review)
 
 
 
